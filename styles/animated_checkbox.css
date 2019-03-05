@@ -4,7 +4,11 @@
 
 body {
   background-color: whitesmoke;
-  margin: 50px 500px; }
+  margin: 50px 200px; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly; }
 
 .tips-list {
   font-family: Arial,Verdana,sans-serif;
@@ -24,6 +28,29 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.23, 1);
   position: relative; }
 
+.tips-input + label > em {
+  display: block;
+  font-style: normal;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.23, 1); }
+
+.tips-input + label > ins {
+  display: block;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.23, 1);
+  position: absolute;
+  bottom: 0;
+  left: 2em; }
+
+.tips-input + label > ins > i {
+  font-style: normal;
+  color: #04b893;
+  position: absolute;
+  bottom: 0; }
+
 .tips-input + label > span {
   display: flex;
   justify-content: center;
@@ -36,6 +63,12 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1); }
+
+.tips-input:checked + label > ins {
+  height: 100%; }
+
+.tips-input:checked + label > em {
+  height: 0; }
 
 .tips-input:checked + label > span {
   border: .6em solid #04b893;
