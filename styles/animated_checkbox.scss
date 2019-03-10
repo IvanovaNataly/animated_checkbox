@@ -1,3 +1,5 @@
+$checked: #04b893;
+
 * {
     box-sizing: border-box;
     user-select: none;
@@ -55,7 +57,7 @@ body {
 
 .tips-input + label > ins > i {
     font-style: normal;
-    color: #04b893;
+    color: $checked;
     position: absolute;
     bottom: 0;
 }
@@ -93,7 +95,7 @@ body {
 }
 
 .tips-input:checked + label > span{
-    border: .6em solid #04b893;
+    border: .6em solid $checked;
     animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
 }
 

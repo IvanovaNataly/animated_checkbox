@@ -71,7 +71,7 @@ body {
   height: 0; }
 
 .tips-input:checked + label > span {
-  border: .6em solid #04b893;
+  border: 0.6em solid #04b893;
   animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1); }
 
 .tips-input:checked + label > span:before {
